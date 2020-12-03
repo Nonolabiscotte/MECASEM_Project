@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Drag n Drop</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'kanban/main.css' %}">
+  </head>
+  <body>
+    <div class="app">
+        <header>
+          <h1>Kanban Template</h1>
+        </header>
+        <div class="lists">
+          <div class="list">
+            <div class="list-title">Tâches</div>
+            <div class="list-item" draggable="true">List item 1</div>
+            <div class="list-item" draggable="true">List item 2</div>
+            <div class="list-item" draggable="true">List item 3</div>
+          </div>
+          <div class="list">
+            <div class="list-title">À faire</div>
+          </div>
+          <div class="list">
+            <div class="list-title">En cours</div>
+          </div>
+          <div class="list">
+            <div class="list-title">Réalisée(s)</div>
+          </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="{% static 'kanban/javascript/main.js' %}"></script>
+  </body>
+</html>
